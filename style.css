@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccc;
+}
+
+.title {
+  text-align: center;
+}
+
+.calContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* width: 24%; */
+  width: 50%;
+  margin: 30px auto;
+  background-color: rgb(8, 8, 8);
+  color: #fff;
+}
+
+.calDisplay input {
+  width: 100%;
+  font-size: 45px;
+  padding: 10px 5px;
+  /* direction: rtl; */
+  cursor: none;
+  color: #fff;
+  background-color: rgb(8, 8, 8);
+  border: none;
+  /* caret-color: transparent; */
+  /* margin-bottom: 20px; */
+}
+
+.calDisplay input:focus {
+  border: none;
+  outline: none;
+}
+
+.calDisplay {
+  /* border: 1px solid blue; */
+}
+
+.calFunctions {
+  /* border: 1px solid orangered; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calFunctions div {
+  /* border: 1px solid yellow; */
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calFunctions div:hover {
+  font-size: 30px;
+}
+
+.calFunctions .zero {
+  /* width: 50%; */
+}
+
+.calFunctions .backspace {
+  rotate: 180deg;
+}
+
+.clear {
+  background-color: grey;
+}
+
+.operator {
+  background: orange;
+}
+
+.disabledbutton {
+  pointer-events: none;
+  opacity: 0.4;
+}
